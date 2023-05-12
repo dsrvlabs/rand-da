@@ -1,0 +1,7 @@
+syntax = "proto3";
+package rand.rand;
+
+option go_package = "rand/x/rand/types";
+
+// Msg defines the Msg service.
+service Msg {}
