@@ -1,0 +1,12 @@
+syntax = "proto3";
+package rand.rand;
+
+import "gogoproto/gogo.proto";
+import "rand/rand/params.proto";
+
+option go_package = "rand/x/rand/types";
+
+// GenesisState defines the rand module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
